@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopi Chand Jagarlamudi - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0077B5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #004B87;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0077B5;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Collapsible section */
+        .collapsible {
+            background-color: #0077B5;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #005a8d;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gopi Chand Jagarlamudi</h1>
+        <p>Java/J2EE Developer | 5 Years of Experience | Toronto, ON</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Java/J2EE Developer with 5 years of experience in designing, developing, and implementing web-based
+                applications. I specialize in Java SE, Java EE, and Spring frameworks and have extensive experience with
+                cloud infrastructure, database technologies, and CI/CD processes. I thrive in dynamic environments and
+                enjoy working with cutting-edge technologies to deliver high-quality solutions.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <button class="collapsible">Software Engineer - CDW, Toronto (April 2023 - Present)</button>
+            <div class="content">
+                <ul>
+                    <li>Led the design and implementation of microservices architecture using Spring Boot, resulting in a
+                        30% increase in application scalability.</li>
+                    <li>Transitioned AWS infrastructure from Elastic Beanstalk to Docker with Kubernetes, improving
+                        deployment efficiency by 40%.</li>
+                    <li>Migrated monolithic applications to AWS cloud, reducing operational costs by 25%.</li>
+                    <li>Developed and deployed RESTful APIs using Spring Cloud modules, enhancing system integration and
+                        performance.</li>
+                    <li>Enhanced UI components using Angular, resulting in a 15% improvement in user experience and
+                        interface responsiveness.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Java Developer - RBC, Toronto (Sept 2022 - April 2023)</button>
+            <div class="content">
+                <ul>
+                    <li>Implemented RESTful web services with Spring Boot, improving data retrieval times by 25%.</li>
+                    <li>Developed a comprehensive DAO layer with JPA and Hibernate, optimizing database interactions and
+                        reducing query execution time by 20%.</li>
+                    <li>Enhanced security protocols using Spring Security, resulting in a 30% reduction in security
+                        vulnerabilities.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Java Developer - Zoho, India (Jan 2019 - Aug 2021)</button>
+            <div class="content">
+                <ul>
+                    <li>Led the development of web applications using Spring MVC and Hibernate, achieving a 95% on-time
+                        delivery rate.</li>
+                    <li>Utilized OAuth 2.0 and JWT for securing APIs, enhancing application security by 40%.</li>
+                    <li>Implemented JUnit test cases for unit testing, increasing code coverage to 90%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Master of Applied Computing</strong>, University of Windsor, Canada (Sept 2021 - Dec 2022) - GPA:
+                3.10</p>
+            <p><strong>Bachelor of Technology in Computer Science and Engineering</strong>, GITAM University, Hyderabad,
+                India (Aug 2015 - May 2019) - GPA: 8.46</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Java, JavaScript, TypeScript, SQL, PL/SQL, C, C++</li>
+                <li>Frameworks: Spring Boot, Spring MVC, Hibernate, Struts, Angular, React, Node.js</li>
+                <li>Web Technologies: HTML5, CSS3, Bootstrap, jQuery, AJAX, JSON, XML</li>
+                <li>Databases: MySQL, Oracle, MS-SQL, MongoDB, Cassandra</li>
+                <li>Tools: Maven, Jenkins, Git, JIRA, Log4j</li>
+                <li>Cloud & DevOps: AWS, Kubernetes, Docker</li>
+                <li>Testing: JUnit, Selenium, Protractor</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <button class="collapsible">Smart Campus Management System</button>
+            <div class="content">
+                <ul>
+                    <li>Developed backend using Spring Boot and Hibernate, ensuring efficient data management.</li>
+                    <li>Created RESTful APIs for Angular front-end integration, enhancing user experience.</li>
+                    <li>Implemented Spring Security for user authentication and authorization, improving security.</li>
+                    <li>Deployed the application on AWS, ensuring high availability and reliability.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Real-Time Health Monitoring System</button>
+            <div class="content">
+                <ul>
+                    <li>Designed a real-time data processing pipeline using Kafka, reducing data latency.</li>
+                    <li>Developed Spring Boot microservices for data ingestion, processing, and storage, ensuring high
+                        performance.</li>
+                    <li>Created a dynamic UI with Angular for real-time data visualization and interaction.</li>
+                    <li>Implemented MongoDB for efficient data storage and retrieval, optimizing performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:gopi.jagarlamudi99@gmail.com">gopi.jagarlamudi99@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/gopi" target="_blank">linkedin.com/in/gopi</a></p>
+            <p>Phone: +1(226)7878310</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Gopi Chand Jagarlamudi. All rights reserved.
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
